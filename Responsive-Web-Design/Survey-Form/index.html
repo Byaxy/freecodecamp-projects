@@ -1,0 +1,197 @@
+<DOCTYPE html>
+  <html lang="en">
+    <head>
+      <title>Free Code Camp Survey Form | Welcome</title>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width" />
+      <meta name="author" content="CHARLES BYAKUTAGA" />
+      <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+      <header id="header">
+        <h1 id="title">freecodecamp Survey Form</h1>
+        <p id="description">
+          Thank you for the taking the time to help us improve the platform
+        </p>
+      </header>
+      <main id="main">
+        <form id="survey-form">
+          <label for="name" id="name-label">Name</label>
+          <br />
+          <input
+            type="text"
+            id="name"
+            placeholder="Enter Your Full Name"
+            class="wide"
+            required
+          />
+          <br /><br />
+          <label for="email" id="email-label">Email</label>
+          <br />
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter Your Email"
+            class="wide"
+            required
+          />
+          <br /><br />
+          <label for="number" id="number-label"
+            >Age <span>(Optional)</span></label
+          >
+          <br />
+          <input
+            type="number"
+            id="number"
+            min="18"
+            max="100"
+            placeholder="Age"
+            class="wide"
+            required
+          />
+          <br /><br />
+          <label for="dropdown" id="dropdown-label"
+            >Which option best describes your current role?</label
+          >
+          <br />
+          <select id="dropdown" class="wide" required>
+            <option value="None" default>Select current role</option>
+            <option value="student">Student</option>
+            <option value="full time learner">Full Time Learner</option>
+            <option value="full time job">Full Time Job</option>
+            <option value="part time job">Part Time Job</option>
+            <option value="not disclosed">Preffer not to say</option>
+            <option value="other">Other</option>
+          </select>
+          <p>Would you recommend freecodecamp to a friend?</p>
+          <input
+            type="radio"
+            id="definitely"
+            name="recommend"
+            value="Definitely"
+          />
+          <label for="definitely">Definitely</label>
+          <br />
+          <input type="radio" id="maybe" name="recommend" value="Maybe" />
+          <label for="maybe">Maybe</label>
+          <br />
+          <input type="radio" id="no" name="recommend" value="No" />
+          <label for="no">No</label>
+          <br />
+          <input type="radio" id="not_sure" name="recommend" value="Not Sure" />
+          <label for="not_sure">Not Sure</label>
+          <br /><br />
+          <label for="feature" id="feature-label"
+            >What is your favorite feature of freecodecamp?</label
+          >
+          <br /><br />
+          <select id="feature" class="wide" required>
+            <option value="None" default>Select current role</option>
+            <option value="challenges">Challenges</option>
+            <option value="projects">Projects</option>
+            <option value="community">Community</option>
+            <option value="open source">Open Source</option>
+            <option value="other">Other</option>
+          </select>
+          <p>
+            What would you like to see improved?
+            <span>(Check all that apply)</span>
+          </p>
+          <input
+            type="checkbox"
+            value="Front-end Projects"
+            id="front_end"
+            name="improve"
+          />
+          <label for="front_end">Front-end Projects</label>
+          <br />
+          <input
+            type="checkbox"
+            value="Back-end Projects"
+            id="back-end"
+            name="improve"
+          />
+          <label for="back-end">Back-end Projects</label>
+          <br />
+          <input
+            type="checkbox"
+            value="Data Visualisation"
+            id="data"
+            name="improve"
+          />
+          <label for="data">Data Visualisation</label>
+          <br />
+          <input
+            type="checkbox"
+            value="Challenges"
+            id="challenges"
+            name="improve"
+          />
+          <label for="challenges">Challenges</label>
+          <br />
+          <input
+            type="checkbox"
+            value="Open Source Community"
+            id="open_sC"
+            name="improve"
+          />
+          <label for="open_sC">Open Source Community</label>
+          <br />
+          <input
+            type="checkbox"
+            value="Gitter Help Rooms"
+            id="gitter"
+            name="improve"
+          />
+          <label for="gitter">Gitter Help Rooms</label>
+          <br />
+          <input type="checkbox" value="Videos" id="videos" name="improve" />
+          <label for="videos">Videos</label>
+          <br />
+          <input
+            type="checkbox"
+            value="City MeetUps"
+            id="city_meetups"
+            name="improve"
+          />
+          <label for="city_meetups">City MeetUps</label>
+          <br />
+          <input type="checkbox" value="Wiki" id="wiki" name="improve" />
+          <label for="wiki">Wiki</label>
+          <br />
+          <input type="checkbox" value="Forum" id="forum" name="improve" />
+          <label for="forum">Forum</label>
+          <br />
+          <input
+            type="checkbox"
+            value="Additional Courses"
+            id="add_courses"
+            name="improve"
+          />
+          <label for="add_courses">Additional Courses</label>
+          <br /><br />
+          <label for="textarea" id="textarea-label"
+            >Any comments or suggestions</label
+          >
+          <br /><br />
+          <textarea
+            id="textarea"
+            name="comment"
+            placeholder="Enter your comment here"
+            rows="5"
+            cols="50"
+            class="wide"
+          ></textarea>
+          <br /><br />
+          <button type="submit" id="submit" value="submit" class="button">
+            Submit
+          </button>
+          <button type="reset" id="reset" class="button">Reset</button>
+        </form>
+      </main>
+      <footer>
+        <p>Copyright&copy; 2021: Designed by Charles Byakutaga</p>
+      </footer>
+    </body>
+  </html>
+</DOCTYPE>
