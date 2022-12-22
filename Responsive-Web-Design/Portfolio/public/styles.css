@@ -14,7 +14,7 @@
   --fs-24: 1.5rem;
   --fs-20: 1.25rem;
   --container: 69.375rem; /*1100px*/
-  --transition: all 500ms ease-in-out;
+  --transition: 500ms ease-in-out;
 }
 
 html {
@@ -78,7 +78,7 @@ body {
   padding: 15px;
   height: 100%;
   display: block;
-  transition: var(--transition);
+  transition: all var(--transition);
 }
 
 #navbar > ul > li a:hover {
@@ -121,7 +121,7 @@ body {
   background-color: var(--bg-body);
   color: var(--text1);
   font-size: var(--fs-20);
-  transition: var(--transition);
+  transition: all var(--transition);
 }
 
 #welcome-section > div > #contact-me-btn:hover {
@@ -135,6 +135,7 @@ body {
   padding: 15px 30px;
   color: var(--text1);
   text-decoration: none;
+  transition: all var(--transition);
 }
 #contact-me-btn a:hover {
   color: var(--bg-body);
@@ -209,7 +210,7 @@ svg:hover > path {
 .project-links a {
   text-decoration: none;
   color: var(--text1);
-  transition: var(--transition);
+  transition: all var(--transition);
 }
 
 .project-links a:hover {
@@ -293,7 +294,7 @@ svg:hover > path {
   margin-inline: auto;
   background-color: var(--accent);
   border: 1px solid var(--accent);
-  transition: var(--transition);
+  transition: all var(--transition);
 }
 
 #contact-form > form > button:hover {
@@ -393,7 +394,7 @@ svg:hover > path {
     gap: 20px;
     width: 100%;
     height: 100%;
-    transition: var(--transition);
+    transition: all var(--transition);
   }
 
   .project-links > a {
