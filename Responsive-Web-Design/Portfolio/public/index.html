@@ -40,7 +40,8 @@
             I'm passionate about building beautiful, accessible, and responsive
             web applications that users Love.
           </p>
-          <button id="contact-me-btn">Contact Me</button>
+
+          <button id="contact-me-btn"><a href="#contact">Contact Me</a></button>
         </div>
       </section>
       <section class="wrapper">
@@ -429,26 +430,6 @@
     </footer>
 
     <!--Scripts-->
-    <!--Scroll to reveal active sections -->
-    <script type="text/javascript">
-      window.addEventListener("scroll", reveal);
-
-      function reveal() {
-        let reveals = document.querySelectorAll(".reveal");
-
-        for (let i = 0; i < reveals.length; i++) {
-          let windowHeight = window.innerHeight;
-          let revealTop = reveals[i].getBoundingClientRect().top;
-          let revealPoint = 150;
-
-          if (revealTop < windowHeight - revealPoint) {
-            reveals[i].classList.add("active");
-          } else {
-            reveals[i].classList.remove("active");
-          }
-        }
-      }
-    </script>
 
     <!--Scroll to reveal text animation-->
     <script>
@@ -464,6 +445,17 @@
         delay: 500,
         origin: "bottom",
         interval: 100,
+      });
+    </script>
+
+    <script>
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
       });
     </script>
 

@@ -116,7 +116,6 @@ body {
 }
 
 #welcome-section > div > #contact-me-btn {
-  padding: 15px 30px;
   margin-top: 3rem;
   border: 1px solid var(--accent);
   background-color: var(--bg-body);
@@ -131,6 +130,16 @@ body {
   color: var(--bg-body);
 }
 
+#contact-me-btn a {
+  display: block;
+  padding: 15px 30px;
+  color: var(--text1);
+  text-decoration: none;
+}
+#contact-me-btn a:hover {
+  color: var(--bg-body);
+}
+
 svg > path {
   fill: var(--text1);
   transition: fill var(--transition);
@@ -139,18 +148,6 @@ svg > path {
 svg:hover > path {
   fill: var(--accent);
   cursor: pointer;
-}
-
-.reveal {
-  position: relative;
-  transform: translateY(150px);
-  opacity: 0;
-  transition: all 2s ease-in-out;
-}
-
-.reveal.active {
-  transform: translateY(0px);
-  opacity: 1;
 }
 
 .wrapper {
