@@ -1,28 +1,33 @@
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 body {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
-  line-height: 1.5;
+  font-size: 18px;
+  line-height: 1.8;
   background-color: #f1f1f1;
 }
 #main {
-  width: 90%;
-  margin: auto;
+  width: calc(100% - 2rem);
+  margin-inline: auto;
 }
 .header {
   padding: 20px;
-  margin: 20px;
+  margin-bottom: 20px;
   text-align: center;
   background: white;
   color: #020530e5;
 }
 .header h1 {
-  font-size: 50px;
+  font-size: 36px;
 }
 .header p {
   font-size: 20px;
+}
+#img-div {
+  width: 100%;
+  height: auto;
 }
 #img-div figure {
   text-align: center;
@@ -39,25 +44,28 @@ body {
   padding: 20px;
 }
 #tribute-info {
-  float: right;
-  width: 75%;
+  width: 100%;
   margin-top: 0px;
 }
 #aside {
-  float: left;
-  width: 25%;
+  width: 100%;
   background-color: #f1f1f1;
-  padding-right: 20px;
   margin-top: 0px;
+  margin-inline: auto;
 }
 .card {
   background-color: white;
   padding: 20px;
   margin-top: 20px;
   color: #020530e5;
+  margin-inline: auto;
 }
-.card h2,
-h3 {
+.card h2 {
+  text-align: center;
+  padding-bottom: 15px;
+}
+.card h3 {
+  padding-bottom: 15px;
   text-align: center;
 }
 .row:after {
@@ -69,7 +77,7 @@ footer {
   padding: 20px;
   text-align: center;
   background: #ddd;
-  margin-top: 20px;
+  margin-top: 40px;
   color: #020530e5;
 }
 .card p a {
@@ -78,12 +86,32 @@ footer {
 }
 .card p a:hover {
   text-decoration: underline;
-  font-size: 18px;
 }
-@media screen and (max-width: 800px) {
-  #tribute-info,
+
+/* 600px */
+@media (min-width: 37.5em) {
+  #main {
+    width: calc(100% - 3.75rem);
+  }
+
+  .header h1 {
+    font-size: 50px;
+  }
+}
+
+/** 1000px */
+
+@media (min-width: 62.5em) {
+  #tribute-info {
+    float: right;
+    width: 75%;
+  }
   #aside {
-    width: 100%;
-    padding: 0;
+    float: left;
+    width: 25%;
+    padding-right: 20px;
+  }
+  .card h3 {
+    text-align: left;
   }
 }
