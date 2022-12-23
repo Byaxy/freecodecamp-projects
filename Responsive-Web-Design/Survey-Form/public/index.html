@@ -8,13 +8,13 @@
       <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-      <header id="header">
+      <header id="header" class="wrapper">
         <h1 id="title">freecodecamp Survey Form</h1>
         <p id="description">
           Thank you for taking the time to help us improve the platform
         </p>
       </header>
-      <main id="main">
+      <main id="main" class="wrapper">
         <form id="survey-form">
           <label for="name" id="name-label">Name</label>
           <br />
@@ -183,10 +183,12 @@
             class="wide"
           ></textarea>
           <br /><br />
-          <button type="submit" id="submit" value="submit" class="button">
-            Submit
-          </button>
-          <button type="reset" id="reset" class="button">Reset</button>
+          <div class="btn-container">
+            <button type="submit" id="submit" value="submit" class="button">
+              Submit
+            </button>
+            <button type="reset" id="reset" class="button">Reset</button>
+          </div>
         </form>
       </main>
       <footer>
