@@ -20,10 +20,9 @@ body {
   top: 0;
 }
 #main-doc {
-  width: 72%;
+  width: 70%;
   float: right;
-  margin: 20px;
-  margin-top: 0;
+  margin: 0px 15px;
 }
 #doc-header {
   font-size: 18px;
@@ -54,20 +53,20 @@ body {
 }
 .main-section p,
 ul {
-  margin: 20px;
+  margin: 20px 10px;
 }
 .doc-code {
   display: block;
   background-color: #f8f8f8;
-  margin: 20px;
+  margin: 20px 0px;
   border-radius: 8px;
 }
 .main-section ul li {
   margin: 15px;
-  margin-left: 60px;
+  margin-left: 20px;
 }
 #more-ind li {
-  margin-left: 80px;
+  margin-left: 40px;
 }
 .footer {
   padding: 15px;
@@ -84,12 +83,17 @@ ul {
     overflow-y: scroll;
   }
   #main-doc {
-    width: 100%;
+    width: calc(100% - 2rem);
     float: none;
     margin: auto;
     margin-top: 260px;
   }
+  .doc-code {
+    margin-left: 0px;
+    padding-left: 0px;
+  }
   .footer {
     margin: 20px;
+    margin-bottom: 0px;
   }
 }
