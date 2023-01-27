@@ -19,10 +19,11 @@
 
 html {
   font-size: 100%;
-  scroll-behavier: smooth;
+  
 }
 
 * {
+  scroll-behavier: smooth;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
